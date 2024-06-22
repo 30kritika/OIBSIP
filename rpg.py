@@ -71,7 +71,6 @@ class PasswordGenerator(QWidget):
 
         password = ''.join(random.choice(characters) for _ in range(length))
 
-        # Ensure the password includes at least one character from each selected category
         if include_uppercase:
             password = self.ensure_character(password, string.ascii_uppercase)
         if include_numbers:
